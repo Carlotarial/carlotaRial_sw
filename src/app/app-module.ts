@@ -7,12 +7,11 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
-import { Navbar } from './navbar/navbar';
 import { HttpClientModule } from '@angular/common/http';
 import { List } from './list/list';
 
 @NgModule({
-  declarations: [App, Navbar, List],
+  declarations: [App, List],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [
     provideBrowserGlobalErrorListeners(),
